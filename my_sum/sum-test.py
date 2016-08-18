@@ -10,17 +10,15 @@ class MySumTests(unittest.TestCase):
 		
 	def test_sum_of_numbers(self):
 		result = my_sum(5,10)
-		self.assertEqual(result, 15)
+		self.assertNotEquals(result, 20)
 		self.assertEqual(my_sum(10,15),25, "Sum")
-
-	def test_diff_of_number(self):
-		self.assertEqual(my_sum(15,10),5, "Difference")
 
 	'''Assert throwing of exception when it's a number'''
 	def test_non_numbers(self):
-		self.assertTrue(my_sum(''), "please input intergers")
+		#self.assertTrue(my_sum(''), "please input intergers")
+		self.assertRaises(TypeError, my_sum, 2, 'name')
 
-		pass
+		#pass
 
 
 if __name__ == '__main__':
