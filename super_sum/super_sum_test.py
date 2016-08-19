@@ -11,7 +11,6 @@ class MySuperSumTest(unittest.TestCase):
 		self.assertEqual(4, super_sum(2,2), msg = "The sum of numbers")
 		self.assertEqual(6, super_sum(2,2,2), msg = "The sum of numbers  ")
 		
-
 	def test_list_is_empty(self):
 		self.assertEqual('list empty', super_sum())
 
