@@ -1,8 +1,6 @@
-# 1,2,3,[4,5]
 def super_sum(*numbers):
 	if not len(numbers):
 		return 'list empty'
-	# total = 0
 	total_n = 0
 	total_l = 0
 	for number in numbers:
